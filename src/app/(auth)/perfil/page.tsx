@@ -34,6 +34,7 @@ export default function Perfil() {
                         <div id="catalog" className="grid lg:grid-cols-3 gap-8 md:grid-cols-2 sm:grid-cols-1">
                             {bonecos.map((boneco) => (
                                 <BonecoCard
+                                    id={boneco.id}
                                     colecao={boneco.colecao ? boneco.colecao : "Sem coleção"}
                                     nome={boneco.nome}
                                     imageUrl={boneco.imageUrl}

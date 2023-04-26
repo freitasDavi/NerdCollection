@@ -1,5 +1,6 @@
 
 type Product = {
+    id: number;
     nome: string;
     colecao?: string;
     categoria: string;
@@ -11,6 +12,7 @@ type Product = {
 
 export const productsData: Product[] = [
     {
+        id: 1,
         avaliacao: 4,
         categoria: 'Bonequinho',
         colecao: 'Avengers Assemble',
@@ -20,6 +22,7 @@ export const productsData: Product[] = [
         marca: 'Marvel'
     },
     {
+        id: 2,
         avaliacao: 4,
         categoria: 'Bonequinho',
         colecao: 'DC Massa',
@@ -29,6 +32,7 @@ export const productsData: Product[] = [
         marca: 'DC'
     },
     {
+        id: 1,
         avaliacao: 4,
         categoria: 'Bonequinho',
         colecao: 'Avengers Assemble',

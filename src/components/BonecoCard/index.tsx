@@ -1,14 +1,17 @@
+import Link from "next/link";
+
 interface BonecoCardProps  {
     imageUrl?: string;
     colecao : string;
     nome: string;
+    id: number;
 }
 
-export const BonecoCard = ({ imageUrl, colecao, nome } : BonecoCardProps) => {
+export const BonecoCard = ({ imageUrl, colecao, nome, id } : BonecoCardProps) => {
     const image = imageUrl ? imageUrl : "https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1592&q=80";
     
     return (
-        <a href="#" className="block rounded-lg p-4 ">
+        <Link href="/produto/batatafrita?teste=batata" className="block rounded-lg p-4 ">
             <img
             alt="Home"
             src={image}
@@ -28,6 +31,6 @@ export const BonecoCard = ({ imageUrl, colecao, nome } : BonecoCardProps) => {
                 </div>
 
             </div>
-      </a>
+      </Link>
     )
 }

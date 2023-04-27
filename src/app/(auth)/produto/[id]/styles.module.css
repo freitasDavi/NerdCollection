@@ -1,0 +1,52 @@
+.container{
+    background-color: #6b7280;
+    border-radius: 8px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nome{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: #111827;
+}
+
+.colecao{
+    display: flex;
+    justify-content: space-around;
+}
+
+.descricao{
+    text-align: center;
+}
+
+.lateralComentario{
+    margin-left: 2rem;
+}
+
+.nota{
+    display:block;
+    text-align: center;
+    background-color: #111827;
+    color: white;
+    border-radius: 8px;
+}
+
+.comentarios{
+    margin-top: 1rem;
+    display:block;
+    text-align: center;
+    background-color: #111827;
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.adicionarComentario{
+    margin-top: 12rem;
+    width: 24rem;
+    border-radius: 8px;
+}

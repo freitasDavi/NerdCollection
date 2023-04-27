@@ -10,13 +10,14 @@ type Product = {
     marca: string;
 }
 
+
 export const productsData: Product[] = [
     {
         id: 1,
         avaliacao: 4,
         categoria: 'Bonequinho',
         colecao: 'Avengers Assemble',
-        descricao: "Llaaalalal",
+        descricao: 'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.',
         nome: "Homem de Ferro",
         imageUrl: "https://cf.shopee.com.br/file/355a57a51d7d2b945a40680bf6d82d2f",
         marca: 'Marvel'
@@ -26,7 +27,7 @@ export const productsData: Product[] = [
         avaliacao: 4,
         categoria: 'Bonequinho',
         colecao: 'DC Massa',
-        descricao: "Llaaalalal",
+        descricao: "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
         nome: "Batma",
         imageUrl: "https://cf.shopee.com.br/file/baf8660fd06c57858d6d34a3c9bf8078",
         marca: 'DC'
@@ -36,7 +37,7 @@ export const productsData: Product[] = [
         avaliacao: 4,
         categoria: 'Bonequinho',
         colecao: 'Avengers Assemble',
-        descricao: "Llaaalalal",
+        descricao: "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
         nome: "Homem Aranha",
         imageUrl: "https://brincamundo.com.br/wp-content/uploads/2023/04/spiderman-action-figure.webp",
         marca: 'Marvel'

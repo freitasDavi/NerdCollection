@@ -2,9 +2,11 @@
     background-color: #6b7280;
     border-radius: 8px;
     margin: auto;
+    margin-bottom: 3rem;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
+    max-width: 60rem;
 }
 
 .nome{
@@ -19,34 +21,47 @@
     justify-content: space-around;
 }
 
+.colecao span{
+    color: white;
+}
+
 .descricao{
     text-align: center;
 }
 
 .lateralComentario{
     margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .nota{
     display:block;
     text-align: center;
-    background-color: #111827;
-    color: white;
+    color: #111827;
     border-radius: 8px;
 }
 
 .comentarios{
     margin-top: 1rem;
     display:block;
-    text-align: center;
-    background-color: #111827;
+    text-align:justify;
     color: white;
-    border-radius: 8px;
     padding: 1rem;
+    border-bottom: 1px solid #111827;
+}
+
+.comentariosNome{
+    display: flex;
+}
+
+.comentariosNome span{
+    color: #111827;
 }
 
 .adicionarComentario{
-    margin-top: 12rem;
     width: 24rem;
     border-radius: 8px;
 }

@@ -18,32 +18,35 @@ export default function Produto({ params }) {
                     <hr />
                     <div></div>
                     <div className={styles.colecao}>
-                        <p>{produto?.marca}</p>
-                        <p>{produto?.colecao}</p>
+                        <span>Marca:</span>
+                        <h3>{produto?.marca}</h3>
+                        <span>Coleção:</span>
+                        <h3>{produto?.colecao}</h3>
                     </div>
+                    <br />
                     <div className={styles.descricao}>
                         <p>{produto?.descricao}</p>
                     </div>
                 </div>
                 <div>
                     <div className={styles.lateralComentario}>
-                        <div className={styles.nota}>
-                            <span>{produto?.avaliacao}</span>
-                        </div>
-                        <div className={styles.comentarios}>
-                            <h2>João Pedro</h2>
-                            <hr />
-                            <span>Este personagem é demais!</span>
-                        </div>
-                        <div className={styles.comentarios}>
-                            <h2>Maria Joaquina</h2>
-                            <hr />
-                            <span>Tentei comprar ele e não consegui!</span>
-                        </div>
-                        <div className={styles.comentarios}>
-                            <h2>Carlos</h2>
-                            <hr />
-                            <span>Meu sonho de infância.</span>
+                        <div>
+                            <div className={styles.nota}>
+                                <span>Nota: </span>
+                                <span>{produto?.avaliacao}</span>
+                            </div>
+                            <div className={styles.comentarios}>
+                            <div className={styles.comentariosNome}> <h2>João Pedro</h2> <span>@JoaoPedro</span></div>
+                                <span>Este personagem é demais!</span>
+                            </div>
+                            <div className={styles.comentarios}>
+                            <div className={styles.comentariosNome}> <h2>Maria Joaquina</h2> <span>@MariaJ</span></div>
+                                <span>Tentei comprar ele e não consegui!</span>
+                            </div>
+                            <div className={styles.comentarios}>
+                                <div className={styles.comentariosNome}> <h2>Carlos</h2> <span>@Carlos.trikas</span></div>
+                                <span>Meu sonho de infância.</span>
+                            </div>
                         </div>
                         <div>
                             <textarea className={styles.adicionarComentario} name="comentar" id="comentar" placeholder="Adicione um comentário"></textarea>

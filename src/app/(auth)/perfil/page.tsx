@@ -41,6 +41,32 @@ export default function Perfil() {
                                 />
                             ))}
                         </div>
+
+                        <nav aria-label="Page navigation example" className="w-full flex justify-center py-6">
+                            <ul className=" inline-flex -space-x-px">
+                                <li>
+                                    <a href="#" className="px-3 py-2 ml-0 leading-tight rounded-l-lg bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white">Anterior</a>
+                                </li>
+                                <li>
+                                    <a href="#" className="px-3 py-2 leading-tight border  bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white">1</a>
+                                </li>
+                                <li>
+                                    <a href="#" className="px-3 py-2 leading-tight border  bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-current="page" className="px-3 py-2 hover:bg-blue-100 hover:text-blue-700 border-gray-300 bg-gray-700 text-white">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" className="px-3 py-2 leading-tight  border  bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white">4</a>
+                                </li>
+                                <li>
+                                    <a href="#" className="px-3 py-2 leading-tight  border  bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white">5</a>
+                                </li>
+                                <li>
+                                    <a href="#" className="px-3 py-2 leading-tight  border  rounded-r-lg  bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white">Próxima</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </article>
                 </div>
             </div>

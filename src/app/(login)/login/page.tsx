@@ -37,14 +37,14 @@ export default function Login() {
 
             <div className="col-span-6 flex justify-between items-center sm:flex sm:items-center sm:gap-4">
                 <button
-                    className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 hover:bg-blue-700 hover:text-white"
+                    className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 hover:bg-blue-700"
                 >
                     Login
                 </button>
 
                 <p className="mt-4 text-sm  text-gray-400 sm:mt-0">
                     Não tem uma conta?
-                    <Link href="/login" className="mx-1 underline text-gray-200">
+                    <Link href="/register" className="mx-1 underline text-gray-200">
                         Cadastre-se
                     </Link>.
                 </p>

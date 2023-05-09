@@ -1,7 +1,8 @@
+import { SessionContextProvider } from '@/contexts/SessionContext'
 import './globals.css'
 import { Dongle, Roboto } from 'next/font/google'
 
-const roboto = Roboto({ 
+const roboto = Roboto({
   weight: ['300', '400', '500'],
   subsets: ['latin'],
   variable: '--roboto'
@@ -26,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dongle.variable} ${roboto.variable}`}>
-        {children}
+        <SessionContextProvider>
+          {children}
+        </SessionContextProvider>
       </body>
     </html>
   )

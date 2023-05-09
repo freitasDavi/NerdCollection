@@ -20,7 +20,7 @@ export default function AuthenticatedLayout({ children }: { children: React.Reac
         <html lang="pt">
             <head />
             <body className={`${roboto.variable} ${dongle.variable}`}>
-                <main className="flex">
+                <main className="flex flex-col bg-gray-900">
                     <Menu />
                     <section className="flex-1">
                         {children}

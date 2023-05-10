@@ -14,7 +14,7 @@ export default function Login() {
         login();
 
         setTimeout(() => {
-            navigation.push("/");
+            navigation.push("/home");
         }, 500);
     }
 

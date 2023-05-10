@@ -43,7 +43,7 @@ export default function Produto({ params }: { params: { id: number } }) {
                         <img
                             src={produto!.imageUrl}
                             alt={produto?.nome}
-                            className="rounded-lg w-full max-h-[500px] object-contain "
+                            className="rounded-lg w-full min-h-[500px] max-h-[500px] object-contain"
                         />
                     </div>
                     <span className="text-center">

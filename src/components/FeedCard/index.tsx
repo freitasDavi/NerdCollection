@@ -6,7 +6,7 @@ interface FeedCardProps {
 
 export default function FeedCard({ nome, dono, image }: FeedCardProps) {
     return (
-        <a href="#" className="block group w-full pb-4 border-b-[1px] border-gray-600">
+        <div className="block group w-full pb-4 border-b-[1px] border-gray-600">
             <img
                 src={image}
                 alt=""
@@ -31,6 +31,6 @@ export default function FeedCard({ nome, dono, image }: FeedCardProps) {
                     ab maiores placeat odio id?
                 </p>
             </div>
-        </a>
+        </div>
     )
 }

@@ -4,6 +4,7 @@ export interface EventCardProps {
     title: string;
     date: string;
     resumo: string;
+    url?: string;
 }
 
 
@@ -21,11 +22,9 @@ export function EventCard({ date, img, resumo, title }: EventCardProps) {
                     {date}
                 </time>
 
-                <a href="#">
-                    <h3 className="mt-0.5 text-lg text-gray-900">
-                        {title}
-                    </h3>
-                </a>
+                <h3 className="mt-0.5 text-lg text-gray-900">
+                    {title}
+                </h3>
 
                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
                     {resumo}

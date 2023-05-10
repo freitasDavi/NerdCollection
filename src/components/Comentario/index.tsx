@@ -16,7 +16,8 @@ export default function Comentario({ placeholder = "Comprou algo novo? Nos mostr
                 className="w-full rounded-lg 
                 bg-transparent border-gray-800 border-[2px] pt-2 pb-4 px-2
                 placeholder:text-sm placeholder:text-gray-400
-                focus-within:border-red-500 focus:ring-red-500"
+                focus-within:border-red-500 focus:ring-red-500
+                text-gray-200"
             />
         </div>
     )

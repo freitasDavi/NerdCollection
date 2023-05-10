@@ -46,7 +46,7 @@ export default function Perfil() {
                             </button>
                         </div>
                         <div id="catalog" className="grid lg:grid-cols-3 gap-8 md:grid-cols-2 sm:grid-cols-1">
-                            {bonecos.map((boneco) => (
+                            {bonecos.filter((boneco) => boneco.dono === "Batman Soares").map((boneco) => (
                                 <BonecoCard
                                     key={boneco.id}
                                     id={boneco.id}

@@ -18,11 +18,11 @@ export default function Perfil() {
                     <div id="info" className="w-full min-h-[300px] rounded-lg flex p-4 pt-8">
                         <img
                             className="rounded-full w-40 h-40"
-                            src="https://easydrawingguides.com/wp-content/uploads/2017/01/How-to-draw-batmans-face-19.png"
+                            src="https://pbs.twimg.com/profile_images/1629220015319797761/yCs_jo_U_400x400.jpg"
                             alt="profile"
                         />
                         <div>
-                            <h2 className="text-5xl text-white mb-0 font-dongle">Oi, eu sou o Batman</h2>
+                            <h2 className="text-5xl text-white mb-0 font-dongle">Oi, eu sou o Asa Noturna</h2>
                             <h4 className="font-sans text-gray-300 mb-2">Colecionador ha 5 anos</h4>
                             <p className="text-white font-roboto">
                                 Minha grande bio

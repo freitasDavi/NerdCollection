@@ -29,7 +29,7 @@ const comentarios = [
     }
 ]
 
-export default function Produto({ params }) {
+export default function Produto({ params }: { params: { id: number } }) {
     const [produto, setProduto] = useState(
         productsData.find((prod) => prod.id == params.id)
     );

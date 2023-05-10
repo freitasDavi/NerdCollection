@@ -8,7 +8,7 @@ export default function Login() {
     const navigation = useRouter();
     const { login } = useSession();
 
-    const handleLogin = async (e) => {
+    const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         login();
@@ -19,7 +19,7 @@ export default function Login() {
     }
 
     return (
-        <form action="#" className="mt-8 grid grid-cols-6 gap-6">
+        <form action="#" className="mt-8 grid grid-cols-6 gap-6" onSubmit={handleLogin}>
             <div className="col-span-6">
                 <label
                     htmlFor="Email"
@@ -53,7 +53,7 @@ export default function Login() {
 
             <div className="col-span-6 flex justify-between items-center sm:flex sm:items-center sm:gap-4">
                 <button
-                    onClick={handleLogin}
+                    type="submit"
                     className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500 hover:bg-blue-700"
                 >
                     Login

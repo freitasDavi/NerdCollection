@@ -2,8 +2,10 @@
 
 import { BonecoCard } from "@/components/BonecoCard";
 import { useState } from "react";
+import { MagnifyingGlass } from "@phosphor-icons/react"
 
 import { productsData } from "@/database/Products"
+import { Input } from "@/components/Input";
 
 export default function Perfil() {
     const [bonecos, setBonecos] = useState(productsData);
@@ -13,7 +15,7 @@ export default function Perfil() {
             <div className="w-3/4">
                 <h1 className="text-6xl text-white mb-4 font-dongle">Meu perfil</h1>
                 <div className="bg-gray-700 min-h-[400px] rounded-lg p-4">
-                    <div id="info" className="w-full bg-gray-600 min-h-[300px] rounded-lg mb-4 flex p-4 pt-8">
+                    <div id="info" className="w-full min-h-[300px] rounded-lg flex p-4 pt-8">
                         <img
                             className="rounded-full w-40 h-40"
                             src="https://easydrawingguides.com/wp-content/uploads/2017/01/How-to-draw-batmans-face-19.png"
@@ -31,6 +33,18 @@ export default function Perfil() {
                     </div>
                     <article className="flex flex-col gap-4">
                         <h2 className="text-white font-roboto text-2xl font-medium pl-4">Meus colecionáveis</h2>
+                        <div className="sm:w-full md:w-4/6 lg:w-3/6 px-4 flex items-end gap-1">
+                            <Input
+                                title="Coleção"
+                                placeholder="Avengers Assemble"
+                            />
+                            <button className="text-blue-500 hover:text-blue-200 bg-gray-200 hover:bg-blue-900 transition-all ease-in rounded-lg px-4 py-[0.6rem]">
+                                <MagnifyingGlass
+                                    height={20}
+                                    width={20}
+                                />
+                            </button>
+                        </div>
                         <div id="catalog" className="grid lg:grid-cols-3 gap-8 md:grid-cols-2 sm:grid-cols-1">
                             {bonecos.map((boneco) => (
                                 <BonecoCard

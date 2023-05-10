@@ -1,12 +1,16 @@
+interface FeedCardProps {
+    nome: string;
+    dono: string;
+    image: string;
+}
 
-
-export default function FeedCard() {
+export default function FeedCard({ nome, dono, image }: FeedCardProps) {
     return (
         <a href="#" className="block group w-full pb-4 border-b-[1px] border-gray-600">
             <img
-                src="https://cf.shopee.com.br/file/ce4ed03217a6920b74b4c5929fc0db07"
+                src={image}
                 alt=""
-                className="sm:h-[450px] lg:h-[300px] w-full object-cover  rounded-lg"
+                className="sm:h-[450px] lg:h-[400px] w-full object-cover object-top  rounded-lg"
             />
 
             <div className="mt-3 px-4">
@@ -14,11 +18,11 @@ export default function FeedCard() {
                     <h3
                         className="text-sm text-gray-200 group-hover:underline group-hover:underline-offset-4"
                     >
-                        One Piece nº 1
+                        {nome}
                     </h3>
                     <span className="flex items-center gap-2">
-                        <p className="text-xs">por</p>
-                        <h4 className="text-sm text-gray-100 ">Batman Rodrigues</h4>
+                        <p className="text-xs text-gray-300">por</p>
+                        <h4 className="text-sm text-gray-100 ">{dono}</h4>
                     </span>
                 </div>
 

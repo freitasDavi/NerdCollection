@@ -6,6 +6,8 @@
 
   Projeto da faculdade de Análise e Desenvolvimento de Sistemas com intuíto de criar uma pseudo rede social para catalogar coleções e conectar colecionadores ao redor do mundo. Para esse projeto básico, que serve de um protótipo, foi utilizado Next13 com TailwindCSS e Phosphor Icons.
 
+Demo [Acesse](https://nerd-collection.vercel.app/)
+
 ## Requisitos do Sistema
 
 - [x] Catalogar seus próprios produtos
